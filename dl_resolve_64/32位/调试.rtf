@@ -1,0 +1,607 @@
+{\rtf1\ansi\ansicpg936\cocoartf1404\cocoasubrtf470
+{\fonttbl\f0\fswiss\fcharset0 Helvetica;\f1\fnil\fcharset134 PingFangSC-Regular;\f2\fnil\fcharset0 HelveticaNeue;
+\f3\fmodern\fcharset0 Courier;\f4\fnil\fcharset0 LucidaGrande;\f5\fnil\fcharset0 ArialUnicodeMS;
+}
+{\colortbl;\red255\green255\blue255;\red255\green0\blue0;\red0\green0\blue255;\red255\green0\blue255;
+\red38\green38\blue38;\red234\green234\blue234;\red10\green32\blue81;\red109\green111\blue3;\red0\green0\blue109;
+\red113\green0\blue13;\red0\green255\blue0;\red107\green0\blue109;\red11\green84\blue105;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww18480\viewh12220\viewkind0
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 \
+\
+p *(struct link_map*) 0xf7714918\
+\
+x /100xw 0xf7714918\
+\
+\
+\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f1 \cf0 \'bf\'b4\'c4\'c4\'d0\'a9\'d7\'d6\'b6\'ce\'ca\'c7\'d0\'e8\'d2\'aa\'b9\'b9\'d4\'ec\'b5\'c4\'a1\'a3
+\f0 \
+\
+pwndbg> p *(struct link_map*)0xf7ffd918\
+$2 = \{\
+  l_addr = 0, \
+  l_name = 0xf7ffdc04 "", \
+  l_ld = 0x8049f14, \
+  l_next = 0xf7ffdc08, \
+  l_prev = 0x0, \
+  l_real = 0xf7ffd918, \
+  l_ns = 0, \
+  l_libname = 0xf7ffdbf8, \
+  l_info = \{0x0, 0x8049f14, 0x8049f84, 0x8049f7c, 0x0, 0x8049f54, 0x8049f5c, 0x0, 0x0, 0x0, 0x8049f64, 0x8049f6c, 0x8049f1c, 0x8049f24, 0x0...\}, \
+  l_phdr = 0x8048034, \
+  l_entry = 134513648, \
+  l_phnum = 9, \
+  l_ldnum = 0, \
+  l_searchlist = \{\
+    r_list = 0xf7fd4470, \
+    r_nlist = 3\
+  \}, \
+  l_symbolic_searchlist = \{\
+    r_list = 0xf7ffdbf4, \
+    r_nlist = 0\
+  \}, \
+  l_loader = 0x0, \
+  l_versions = 0xf7fd4480, \
+  l_nversions = 3, \
+  l_nbuckets = 3, \
+  l_gnu_bitmask_idxbits = 0, \
+  l_gnu_shift = 5, \
+  l_gnu_bitmask = 0x80481bc, \
+  \{\
+    l_gnu_buckets = 0x80481c0, \
+    l_chain = 0x80481c0\
+  \}, \
+  \{\
+    l_gnu_chain_zero = 0x80481b0, \
+    l_buckets = 0x80481b0\
+  \}, \
+  l_direct_opencount = 1, \
+  l_type = lt_executable, \
+  l_relocated = 1, \
+  l_init_called = 1, \
+  l_global = 1, \
+  l_reserved = 0, \
+  l_phdr_allocated = 0, \
+  l_soname_added = 0, \
+  l_faked = 0, \
+  l_need_tls_init = 0, \
+  l_auditing = 0, \
+  l_audit_any_plt = 0, \
+  l_removed = 0, \
+  l_contiguous = 0, \
+  l_symbolic_in_local_scope = 0, \
+  l_free_initfini = 0, \
+  l_rpath_dirs = \{\
+    dirs = 0xffffffff, \
+    malloced = 0\
+  \}, \
+  l_reloc_result = 0x0, \
+  l_versyms = 0x80482e4, \
+  l_origin = 0x0, \
+  l_map_start = 134512640, \
+  l_map_end = 134520908, \
+  l_text_end = 134514536, \
+  l_scope_mem = \{0xf7ffda74, 0x0, 0x0, 0x0\}, \
+  l_scope_max = 4, \
+  l_scope = 0xf7ffdad0, \
+  l_local_scope = \{0xf7ffda74, 0x0\}, \
+  l_file_id = \{\
+    dev = 0, \
+    ino = 0\
+  \}, \
+  l_runpath_dirs = \{\
+    dirs = 0xffffffff, \
+    malloced = 0\
+  \}, \
+  l_initfini = 0xf7fd4460, \
+  l_reldeps = 0x0, \
+  l_reldepsmax = 0, \
+  l_used = 1, \
+  l_feature_1 = 0, \
+  l_flags_1 = 0, \
+  l_flags = 0, \
+  l_idx = 0, \
+  l_mach = \{\
+    plt = 0, \
+    gotplt = 0, \
+    tlsdesc_table = 0x0\
+  \}, \
+  l_lookup_cache = \{\
+    sym = 0x8048248, \
+    type_class = 2, \
+    value = 0xf7fd41b0, \
+    ret = 0xf7e0c568\
+  \}, \
+  l_tls_initimage = 0x0, \
+  l_tls_initimage_size = 0, \
+  l_tls_blocksize = 0, \
+  l_tls_align = 0, \
+  l_tls_firstbyte_offset = 0, \
+  l_tls_offset = 0, \
+  l_tls_modid = 0, \
+  l_tls_dtor_count = 0, \
+  l_relro_addr = 134520584, \
+  l_relro_size = 248, \
+  l_serial = 0, \
+  l_audit = 0xf7ffdb74\
+\}\
+pwndbg> x /100xw  0xf7ffd918\
+0xf7ffd918:	0x00000000	0xf7ffdc04		0x08049f14	0xf7ffdc08\
+0xf7ffd928:	0x00000000	0xf7ffd918		0x00000000	0xf7ffdbf8\
+0xf7ffd938:	0x00000000	0x08049f14	0x08049f84	0x08049f7c\
+0xf7ffd948:	0x00000000	\cf2 0x08049f54\cf0 	\cf2 0x08049f5c\cf0 	0x00000000\
+0xf7ffd958:	0x00000000	0x00000000	0x08049f64	0x08049f6c\
+0xf7ffd968:	0x08049f1c	0x08049f24	0x00000000	0x00000000\
+0xf7ffd978:	0x00000000	0x08049f9c	0x08049fa4	0x08049fac\
+0xf7ffd988:	0x08049f8c	0x08049f74	0x00000000	\cf2 0x08049f94\cf0 \
+0xf7ffd998:	0x00000000	0x08049f2c	0x08049f3c	0x08049f34\
+0xf7ffd9a8:	0x08049f44	0x00000000	0x00000000	0x00000000\
+0xf7ffd9b8:	0x00000000	0x00000000	0x08049fbc	0x08049fb4\
+0xf7ffd9c8:	0x00000000	0x00000000	0x00000000	0x00000000\
+0xf7ffd9d8:	0x00000000	0x00000000	0x00000000	0x00000000\
+0xf7ffd9e8:	0x00000000	0x00000000	0x00000000	0x00000000\
+0xf7ffd9f8:		0x00000000	\cf2 0x08049fc4\cf0 	0x00000000	0x00000000\
+0xf7ffda08:	0x00000000	0x00000000	0x00000000	0x00000000\
+0xf7ffda18:	0x00000000	0x00000000	0x00000000	0x00000000\
+0xf7ffda28:	0x00000000	0x00000000	0x00000000	0x00000000\
+0xf7ffda38:	0x00000000	0x00000000	0x00000000	0x00000000\
+0xf7ffda48:	0x00000000	0x00000000	0x00000000	0x00000000\
+0xf7ffda58:	0x00000000	0x00000000	0x00000000	0x08049f4c\
+0xf7ffda68:	0x08048034	0x080483f0	0x00000009	0xf7fd4470\
+0xf7ffda78:	0x00000003	0xf7ffdbf4		0x00000000	0x00000000\
+0xf7ffda88:	0xf7fd4480	0x00000003	0x00000003	0x00000000\
+0xf7ffda98:	0x00000005	0x080481bc	0x080481c0	0x080481b0\
+\
+edi==eax==link_map
+\f1 \'b5\'d8\'d6\'b7
+\f0 \
+0xf7fe77f4 <_dl_fixup+20>    mov    ecx, dword ptr [edi + 0x7c]\
+0xf7ffd918+\cf3 0x7c\cf0     ecx= \cf2 0x08049f94\cf0 \
+\
+0xf7fe77f7 <_dl_fixup+23>    mov    eax, dword ptr [eax + 0x34]\
++\cf3 0x34\cf0  eax= \cf2 0x08049f54\cf0 \
+\
+0xf7fe77fe <_dl_fixup+30>    add    edx, dword ptr [ecx + 4]\
+0xf7fe780b <_dl_fixup+43>    mov    ebp, edx\
+edx=0x08048330+8    \cf4 #rel_plt     
+\f2\fs32 \expnd0\expndtw0\kerning0
+JMPREL\cf5     
+\f1 \'d5\'d2\'b5\'bd\'c6\'ab\'d2\'c6
+\f2 8
+\f1 \'b4\'a6\'b5\'c4
+\f2 \{r_offset+r_info\}
+\f1 \'bd\'e1\'b9\'b9
+\f0\fs24 \cf0 \kerning1\expnd0\expndtw0 \
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \trbrdrt\brdrnil \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clmgf \clvertalc \clshdrawnil \clwWidth23482\clftsWidth3 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt20 \clpadl117 \clpadb20 \clpadr20 \gaph\cellx4320
+\clmrg \clvertalc \clshdrawnil \clwWidth23482\clftsWidth3 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt20 \clpadl117 \clpadb20 \clpadr20 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+
+\f3\fs26 \cf0 \expnd0\expndtw0\kerning0
+\cell 
+\pard\intbl\itap1\cell \row
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrt\brdrnil \trbrdrr\brdrnil 
+\clvertalc \clcbpat6 \clwWidth742\clftsWidth3 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt20 \clpadl20 \clpadb20 \clpadr117 \gaph\cellx4320
+\clvertalc \clshdrawnil \clwWidth23482\clftsWidth3 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt20 \clpadl117 \clpadb20 \clpadr20 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf0 3\cell 
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf7 reloc\cf0 = (\cf8 const\cf0  \cf8 void\cf0  *) ({\field{\*\fldinst{HYPERLINK "https://code.woboq.org/userspace/glibc/sysdeps/generic/ldsodefs.h.html#63"}}{\fldrslt \cf9 D_PTR}} (\cf7 l\cf0 , {\field{\*\fldinst{HYPERLINK "https://code.woboq.org/userspace/glibc/include/link.h.html#link_map::l_info"}}{\fldrslt \cf10 l_info}}[{\field{\*\fldinst{HYPERLINK "https://code.woboq.org/userspace/glibc/elf/elf.h.html#864"}}{\fldrslt \cf9 DT_JMPREL}}]) + {\field{\*\fldinst{HYPERLINK "https://code.woboq.org/userspace/glibc/sysdeps/x86_64/dl-runtime.c.html#6"}}{\fldrslt \cf9 \cb6 reloc_offset}});\cell \lastrow\row
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 \kerning1\expnd0\expndtw0 \
+\
+0xf7fe7801 <_dl_fixup+33>    mov    eax, dword ptr [eax + 4]\
+0xf7fe7807 <_dl_fixup+39>    mov    dword ptr [esp + 0xc], eax\
+eax=0x08048278   \cf4 #dynstr   
+\f2\fs32 \expnd0\expndtw0\kerning0
+STRTAB
+\f0\fs24 \cf0 \kerning1\expnd0\expndtw0 \
+
+\itap1\trowd \taflags0 \trgaph108\trleft-108 \trbrdrt\brdrnil \trbrdrl\brdrnil \trbrdrt\brdrnil \trbrdrr\brdrnil 
+\clvertalc \clshdrawnil \clwWidth23482\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt20 \clpadl117 \clpadb20 \clpadr20 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+
+\f3\fs26 \cf7 \expnd0\expndtw0\kerning0
+2 strtab\cf0  = (\cf8 const\cf0  \cf8 void\cf0  *) {\field{\*\fldinst{HYPERLINK "https://code.woboq.org/userspace/glibc/sysdeps/generic/ldsodefs.h.html#63"}}{\fldrslt \cf9 D_PTR}} (\cf7 l\cf0 , {\field{\*\fldinst{HYPERLINK "https://code.woboq.org/userspace/glibc/include/link.h.html#link_map::l_info"}}{\fldrslt \cf10 l_info}}[{\field{\*\fldinst{HYPERLINK "https://code.woboq.org/userspace/glibc/elf/elf.h.html#846"}}{\fldrslt \cf9 \cb6 DT_STRTAB}}]);\cell \lastrow\row
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 \kerning1\expnd0\expndtw0 \
+\
+0xf7fe7804 <_dl_fixup+36>    mov    ecx, dword ptr [edi + 0x38]\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf3 0x38\cf0    ecx= \cf2 0x08049f5c    [ecx+4]==0x080481d8    \cf4 #
+\f2\fs32 \expnd0\expndtw0\kerning0
+dynsym   SYMTAB
+\f0\fs24 \cf0 \kerning1\expnd0\expndtw0 \
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \trbrdrt\brdrnil \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clmgf \clvertalc \clshdrawnil \clwWidth23482\clftsWidth3 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt20 \clpadl117 \clpadb20 \clpadr20 \gaph\cellx4320
+\clmrg \clvertalc \clshdrawnil \clwWidth23482\clftsWidth3 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt20 \clpadl117 \clpadb20 \clpadr20 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+
+\f3\fs26 \cf0 \expnd0\expndtw0\kerning0
+\cell 
+\pard\intbl\itap1\cell \row
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrt\brdrnil \trbrdrr\brdrnil 
+\clvertalc \clcbpat6 \clwWidth742\clftsWidth3 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt20 \clpadl20 \clpadb20 \clpadr117 \gaph\cellx4320
+\clvertalc \clshdrawnil \clwWidth23482\clftsWidth3 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt20 \clpadl117 \clpadb20 \clpadr20 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf0 1\cell 
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf7 \cb6 symtab\cf0 \cb1 = (\cf8 const\cf0  \cf8 void\cf0  *) {\field{\*\fldinst{HYPERLINK "https://code.woboq.org/userspace/glibc/sysdeps/generic/ldsodefs.h.html#63"}}{\fldrslt \cf9 D_PTR}} (\cf7 l\cf0 , {\field{\*\fldinst{HYPERLINK "https://code.woboq.org/userspace/glibc/include/link.h.html#link_map::l_info"}}{\fldrslt \cf10 l_info}}[{\field{\*\fldinst{HYPERLINK "https://code.woboq.org/userspace/glibc/elf/elf.h.html#847"}}{\fldrslt \cf9 DT_SYMTAB}}]);\cell \lastrow\row
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 \kerning1\expnd0\expndtw0 \
+\
+0xf7fe780d <_dl_fixup+45>    mov    edx, dword ptr [edx + 4]\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f1 \cf0 \'c8\'a1read\'b5\'c4
+\f0 r_info
+\f1 \'d6\'b5    edx= 
+\f0 r_info=0x207
+\f1 \
+0xf7fe7810 <_dl_fixup+48>    mov    eax, dword ptr [ebp]\
+\'c8\'a1r_offset\'d6\'b5          eax= r_offset=0x804a010
+\f0 \
+\
+0xf7fe7813 <_dl_fixup+51>    mov    esi, edx\
+0xf7fe7815 <_dl_fixup+53>    shr    esi, 8\
+0xf7fe7818 <_dl_fixup+56>    mov    ebx, esi\
+0xf7fe781a <_dl_fixup+58>    shl    ebx, 4\
+0xf7fe781d <_dl_fixup+61>    add    ebx, dword ptr [ecx + 4]\
+ebx=( r_info>>8)*0x10=2*0x10=0x20\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf2 ebx\cf0 =ebx+dynsym      
+\f1 \'d5\'d2\'b5\'bd
+\f0 dynsym
+\f1 \'b1\'ed\'d6\'d0\'b5\'c4\'bd\'e1\'b9\'b9\
+
+\itap1\trowd \taflags0 \trgaph108\trleft-108 \trbrdrt\brdrnil \trbrdrl\brdrnil \trbrdrt\brdrnil \trbrdrr\brdrnil 
+\clvertalc \clshdrawnil \clwWidth23482\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt20 \clpadl117 \clpadb20 \clpadr20 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+
+\f3\fs26 \cf7 \cb6 \expnd0\expndtw0\kerning0
+4 sym\cf0 \cb1  = &\cf7 symtab\cf0 [{\field{\*\fldinst{HYPERLINK "https://code.woboq.org/userspace/glibc/sysdeps/generic/ldsodefs.h.html#52"}}{\fldrslt \cf9 ELFW}}(R_SYM) (\cf7 reloc\cf0 ->{\field{\*\fldinst{HYPERLINK "https://code.woboq.org/userspace/glibc/elf/elf.h.html#(anonymous)::r_info"}}{\fldrslt \cf10 r_info}})];\cell \lastrow\row
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 0xf7fe7827 <_dl_fixup+71>    mov    dword ptr [esp + 0x1c], ebx\kerning1\expnd0\expndtw0     symtab
+\f1 \'bd\'e1\'b9\'b9\'b5\'d8\'d6\'b7\'b1\'a3\'b4\'e6\'b5\'bd\'d5\'bb\'c9\'cf
+\f0 \
+\
+\
+0xf7fe7820 <_dl_fixup+64>    mov    ecx, dword ptr [edi]\
+0xf7fe7822 <_dl_fixup+66>    add    eax, ecx\
+read
+\f1 \'b6\'d4\'d3\'a6
+\f0 GOT
+\f1 \'b1\'ed\'b5\'d8\'d6\'b7\'bc\'d3\'c9\'cf
+\f0 l_addr
+\f1 \'a3\'ac\'c3\'bb\'ca\'b2\'c3\'b4\'d3\'c3\'a3\'aceax=read\'b6\'d4\'d3\'a6\'b5\'c4got\'b1\'ed\'b5\'d8\'d6\'b7\'a1\'a3
+\f0 \
+
+\itap1\trowd \taflags0 \trgaph108\trleft-108 \trbrdrt\brdrnil \trbrdrl\brdrnil \trbrdrt\brdrnil \trbrdrr\brdrnil 
+\clvertalc \clshdrawnil \clwWidth23482\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt20 \clpadl117 \clpadb20 \clpadr20 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+
+\f3\fs26 \cf7 \cb6 \expnd0\expndtw0\kerning0
+5 rel_addr\cf0 \cb1  = (\cf8 void\cf0  *)(\cf7 l\cf0 ->{\field{\*\fldinst{HYPERLINK "https://code.woboq.org/userspace/glibc/include/link.h.html#link_map::l_addr"}}{\fldrslt \cf10 l_addr}} + \cf7 reloc\cf0 ->{\field{\*\fldinst{HYPERLINK "https://code.woboq.org/userspace/glibc/elf/elf.h.html#(anonymous)::r_offset"}}{\fldrslt \cf10 r_offset}});\cell \lastrow\row
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f1\fs24 \cf0 \kerning1\expnd0\expndtw0 		\cf11 #11111\'cb\'f9\'d2\'d4\'bb\'f1\'b5\'c3shell\'ca\'b1
+\f0 l_addr
+\f1 \'d2\'aa\'c9\'e8\'d6\'c3\'ce\'aa0\'a1\'a3
+\f0 \cf0 \
+\
+0xf7fe7824 <_dl_fixup+68>    cmp    dl, 7\
+
+\itap1\trowd \taflags0 \trgaph108\trleft-108 \trbrdrt\brdrnil \trbrdrl\brdrnil \trbrdrt\brdrnil \trbrdrr\brdrnil 
+\clvertalc \clshdrawnil \clwWidth23482\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt20 \clpadl117 \clpadb20 \clpadr20 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+
+\f3\fs26 \cf9 \cb6 \expnd0\expndtw0\kerning0
+6 {\field{\*\fldinst{HYPERLINK "https://code.woboq.org/userspace/glibc/assert/assert.h.html#104"}}{\fldrslt assert}}\cf0 \cb1  ({\field{\*\fldinst{HYPERLINK "https://code.woboq.org/userspace/glibc/sysdeps/generic/ldsodefs.h.html#52"}}{\fldrslt \cf9 ELFW}}(R_TYPE)(\cf7 reloc\cf0 ->{\field{\*\fldinst{HYPERLINK "https://code.woboq.org/userspace/glibc/elf/elf.h.html#(anonymous)::r_info"}}{\fldrslt \cf10 r_info}}) == {\field{\*\fldinst{HYPERLINK "https://code.woboq.org/userspace/glibc/sysdeps/x86_64/dl-machine.h.html#208"}}{\fldrslt \cf9 ELF_MACHINE_JMP_SLOT}});\cell \lastrow\row
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 \kerning1\expnd0\expndtw0 \
+\
+	
+\f1 \'b8\'fa\'d7\'d9_dl_fixup\'ba\'af\'ca\'fd\'b7\'a2\'cf\'d6\'a3\'ac_dl_fixup\'ba\'af\'ca\'fd\'c0\'fb\'d3\'c3\'c1\'cblink_map\'c6\'ab\'d2\'c60x34/0x38/0x7c\'b4\'a6\'b5\'c43\'b8\'f6\'d6\'b5\'c0\'b4\'d1\'b0\'d5\'d2STRTAB/SYMTAB/JMPREL\'d5\'e23\'b8\'f6\'b1\'ed\'a1\'a3\
+\
+\'cb\'bc\'c2\'b71\'a3\'ba\'a1\'aa\'a1\'aa3\'b8\'f6\'d6\'b5\'b2\'bb\'b1\'e4\
+	\'b0\'d10x34/0x38/0x7c\'cc\'ee\'c9\'cf\'d5\'fd\'c8\'b7\'b5\'c4\'d6\'b5\'a3\'ac\'d0\'e8\'d2\'aa\'d4\'da\'b5\'f7\'ca\'d4\'d6\'d0\'c0\'b4\'b2\'e9\'bf\'b4\'a1\'a3\
+	\'c6\'e4\'ca\'b5\'be\'cd\'ca\'c7 x/100xw  GOT[4]\'bc\'b4\'bf\'c9\'b7\'a2\'cf\'d6\'a3\'ac\'c0\'fb\'d3\'c3read\'b0\'d13\'b8\'f6\'d6\'b5\'d0\'b4\'b5\'bd\'b6\'d4\'d3\'a6\'c6\'ab\'d2\'c6\'b4\'a6\'a1\'a3
+\f0 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f1 \cf0 \'cb\'bc\'c2\'b7
+\f0 2
+\f1 \'a3\'ba\'a1\'aa\'a1\'aa3\'b8\'f6\'d6\'b5\'b9\'b9\'d4\'ec
+\f0 \
+	
+\f1 \'d7\'d4\'bc\'ba\'b9\'b9\'d4\'ec\'a3\'ac\'bf\'c9\'d2\'d4\'bc\'f2\'bb\'af\'d6\'ae\'ba\'f3\'b5\'c4\'b9\'b9\'d4\'ec\'b9\'fd\'b3\'cc\'a1\'a3\
+	[val_0x34+4]==STRTAB    dynstr\
+	[val_0x38+4]==SYMTAB   dynsym
+\f0 \
+	[val_0x7c+4]==JMPREL      rel_plt\
+\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 \expnd0\expndtw0\kerning0
+0xf7fe7827 <_dl_fixup+71>    mov    dword ptr [esp + 0x1c], ebx\kerning1\expnd0\expndtw0     symtab
+\f1 \'bd\'e1\'b9\'b9\'b5\'d8\'d6\'b7\'b1\'a3\'b4\'e6\'b5\'bd\'d5\'bb\'c9\'cf\
+0xf7fe7831 <_dl_fixup+81>    test   byte ptr [ebx + 0xd], 3\
+	\'c5\'d0\'b6\'cfst_other\'ca\'c7\'b7\'f1\'ce\'aa0\'a3\'bf\'a3\'a8\'c6\'ab\'d2\'c60xd\'a3\'a9
+\f0 \
+\
+0xf7fe783d <_dl_fixup+93>     mov    edx, dword ptr [edi + 0xe4]\
+0xf7fe7843 <_dl_fixup+99>     test   edx, edx\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf3 0xe4\cf0  edx=0x8049fc4  [edx+4]==\cf2 0x080482e4\cf0   \cf4 VERSYM   .gnu.version\cf0   
+\f1 \cf11 \'c6\'ab\'d2\'c6
+\f0 0xe4
+\f1 \'b4\'a6\'c9\'e8\'d6\'c3\'ce\'aa
+\f0 0
+\f1 \'bc\'b4\'bf\'c9
+\f0 \cf0 \
+0xf7fe784b <_dl_fixup+107>    mov    edx, dword ptr [edx + 4]\
+ 
+\f4 \uc0\u9658 
+\f0  0xf7fe784e <_dl_fixup+110>    movzx  edx, word ptr [edx + esi*2]\
+   0xf7fe7852 <_dl_fixup+114>    and    edx, 0x7fff\
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \trbrdrt\brdrnil \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clmgf \clvertalc \clshdrawnil \clwWidth23482\clftsWidth3 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt20 \clpadl117 \clpadb20 \clpadr20 \gaph\cellx4320
+\clmrg \clvertalc \clshdrawnil \clwWidth23482\clftsWidth3 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt20 \clpadl117 \clpadb20 \clpadr20 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+
+\f3\fs26 \cf8 \expnd0\expndtw0\kerning0
+const\cf0  {\field{\*\fldinst{HYPERLINK "https://code.woboq.org/userspace/glibc/elf/link.h.html#30"}}{\fldrslt \cf9 \cb6 ElfW}}(Half) *\cf7 vernum\cf0  =\cell 
+\pard\intbl\itap1\cell \row
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvertalc \clcbpat6 \clwWidth742\clftsWidth3 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt20 \clpadl20 \clpadb20 \clpadr117 \gaph\cellx4320
+\clvertalc \clshdrawnil \clwWidth23482\clftsWidth3 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt20 \clpadl117 \clpadb20 \clpadr20 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf0 91\cell 
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf0             (\cf8 const\cf0  \cf8 void\cf0  *) {\field{\*\fldinst{HYPERLINK "https://code.woboq.org/userspace/glibc/sysdeps/generic/ldsodefs.h.html#63"}}{\fldrslt \cf9 D_PTR}} (\cf7 l\cf0 , {\field{\*\fldinst{HYPERLINK "https://code.woboq.org/userspace/glibc/include/link.h.html#link_map::l_info"}}{\fldrslt \cf10 l_info}}[{\field{\*\fldinst{HYPERLINK "https://code.woboq.org/userspace/glibc/sysdeps/generic/ldsodefs.h.html#44"}}{\fldrslt \cf9 VERSYMIDX}} ({\field{\*\fldinst{HYPERLINK "https://code.woboq.org/userspace/glibc/elf/elf.h.html#926"}}{\fldrslt \cf9 DT_VERSYM}})]);\cell \row
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrt\brdrnil \trbrdrr\brdrnil 
+\clvertalc \clcbpat6 \clwWidth742\clftsWidth3 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt20 \clpadl20 \clpadb20 \clpadr117 \gaph\cellx4320
+\clvertalc \clshdrawnil \clwWidth23482\clftsWidth3 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt20 \clpadl117 \clpadb20 \clpadr20 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf0 92\cell 
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf0           {\field{\*\fldinst{HYPERLINK "https://code.woboq.org/userspace/glibc/elf/link.h.html#30"}}{\fldrslt \cf9 \cb6 ElfW}}(Half) \cf7 ndx\cf0  = \cf7 vernum\cf0 [{\field{\*\fldinst{HYPERLINK "https://code.woboq.org/userspace/glibc/sysdeps/generic/ldsodefs.h.html#52"}}{\fldrslt \cf9 ELFW}}(R_SYM) (\cf7 reloc\cf0 ->{\field{\*\fldinst{HYPERLINK "https://code.woboq.org/userspace/glibc/elf/elf.h.html#(anonymous)::r_info"}}{\fldrslt \cf10 r_info}})] & \cf9 0x7fff\cf0 ;\cell \lastrow\row
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 \kerning1\expnd0\expndtw0 \
+0xf7fe7858 <_dl_fixup+120>    shl    edx, 4\
+   0xf7fe785b <_dl_fixup+123>    add    edx, dword ptr [edi + 0x170]     \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf3 0x170\cf0 \
+   0xf7fe7861 <_dl_fixup+129>    mov    ecx, dword ptr [edx + 4]\
+   0xf7fe7864 <_dl_fixup+132>    test   ecx, ecx\
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \trbrdrt\brdrnil \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvertalc \clcbpat6 \clwWidth742\clftsWidth3 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt20 \clpadl20 \clpadb20 \clpadr117 \gaph\cellx4320
+\clvertalc \clshdrawnil \clwWidth23482\clftsWidth3 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt20 \clpadl117 \clpadb20 \clpadr20 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\qr\partightenfactor0
+
+\f3\fs26 \cf0 \expnd0\expndtw0\kerning0
+93\cell 
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf0           \cf7 \cb6 version\cf0 \cb1  = &\cf7 l\cf0 ->{\field{\*\fldinst{HYPERLINK "https://code.woboq.org/userspace/glibc/include/link.h.html#link_map::l_versions"}}{\fldrslt \cf10 l_versions}}[\cf7 ndx\cf0 ];\cell \row
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrt\brdrnil \trbrdrr\brdrnil 
+\clvertalc \clcbpat6 \clwWidth742\clftsWidth3 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt20 \clpadl20 \clpadb20 \clpadr117 \gaph\cellx4320
+\clvertalc \clshdrawnil \clwWidth23482\clftsWidth3 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt20 \clpadl117 \clpadb20 \clpadr20 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\qr\partightenfactor0
+\cf0 94\cell 
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf0           \cf8 if\cf0  (\cf7 \cb6 version\cf0 \cb1 ->{\field{\*\fldinst{HYPERLINK "https://code.woboq.org/userspace/glibc/sysdeps/generic/ldsodefs.h.html#r_found_version::hash"}}{\fldrslt \cf10 hash}} == \cf9 0\cf0 )\cell \lastrow\row
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 \kerning1\expnd0\expndtw0 \
+\
+0xf7fe786e <_dl_fixup+142>    mov    ecx, dword ptr gs:[0xc]\
+
+\itap1\trowd \taflags0 \trgaph108\trleft-108 \trbrdrt\brdrnil \trbrdrl\brdrnil \trbrdrt\brdrnil \trbrdrr\brdrnil 
+\clvertalc \clshdrawnil \clwWidth23482\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt20 \clpadl117 \clpadb20 \clpadr20 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+
+\f3\fs26 \cf8 \expnd0\expndtw0\kerning0
+int\cf0  \cf7 \cb6 flags\cf0 \cb1  = {\field{\*\fldinst{HYPERLINK "https://code.woboq.org/userspace/glibc/sysdeps/generic/ldsodefs.h.html#DL_LOOKUP_ADD_DEPENDENCY"}}{\fldrslt \cf12 DL_LOOKUP_ADD_DEPENDENCY}};\cell \lastrow\row
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 \kerning1\expnd0\expndtw0 \
+\
+\
+0xf7fe7882 <_dl_fixup+162>:	mov    eax,DWORD PTR [esp+0xc]     #eax=STRTAB   dynstr\
+   0xf7fe7886 <_dl_fixup+166>:	add    eax,DWORD PTR [ebx]             #ebx=symtab
+\f1 \'bd\'e1\'b9\'b9\'b5\'d8\'d6\'b7\'a3\'ac\'d5\'e2\'c0\'ef\'c8\'a1st_name
+\f0 \
+   0xf7fe7888 <_dl_fixup+168>:	lea    ecx,[esp+0x1c]			          #[esp+0x1c]
+\f1 \'d2\'b2\'ca\'c7
+\f0 symtab
+\f1 \'bd\'e1\'b9\'b9\'b5\'d8\'d6\'b7
+\f0 \
+   0xf7fe788c <_dl_fixup+172>:	sub    esp,0xc\
+   0xf7fe788f <_dl_fixup+175>:	push   0x0\
+   0xf7fe7891 <_dl_fixup+177>:	push   esi\
+   0xf7fe7892 <_dl_fixup+178>:	push   0x1\
+   0xf7fe7894 <_dl_fixup+180>:	push   edx\
+   0xf7fe7895 <_dl_fixup+181>:	mov    edx,edi\
+   0xf7fe7897 <_dl_fixup+183>:	\cf2 push   DWORD PTR [edi+0x1cc]\cf0 \
+   0xf7fe789d <_dl_fixup+189>:	call   0xf7fe2a60 <_dl_lookup_symbol_x>\
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \trbrdrt\brdrnil \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clmgf \clvertalc \clshdrawnil \clwWidth23482\clftsWidth3 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt20 \clpadl117 \clpadb20 \clpadr20 \gaph\cellx4320
+\clmrg \clvertalc \clshdrawnil \clwWidth23482\clftsWidth3 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt20 \clpadl117 \clpadb20 \clpadr20 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+
+\f3\fs26 \cf0 \expnd0\expndtw0\kerning0
+ \cf7 result\cf0  = {\field{\*\fldinst{HYPERLINK "https://code.woboq.org/userspace/glibc/elf/dl-lookup.c.html#_dl_lookup_symbol_x"}}{\fldrslt \cf13 _dl_lookup_symbol_x}} (\cf7 strtab\cf0  + \cf7 sym\cf0 ->{\field{\*\fldinst{HYPERLINK "https://code.woboq.org/userspace/glibc/elf/elf.h.html#(anonymous)::st_name"}}{\fldrslt \cf10 st_name}}, \cf7 l\cf0 , &\cf7 sym\cf0 , \cf7 l\cf0 ->{\field{\*\fldinst{HYPERLINK "https://code.woboq.org/userspace/glibc/include/link.h.html#link_map::l_scope"}}{\fldrslt \cf10 l_scope}},\cell 
+\pard\intbl\itap1\cell \row
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrt\brdrnil \trbrdrr\brdrnil 
+\clvertalc \clcbpat6 \clwWidth742\clftsWidth3 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt20 \clpadl20 \clpadb20 \clpadr117 \gaph\cellx4320
+\clvertalc \clshdrawnil \clwWidth23482\clftsWidth3 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt20 \clpadl117 \clpadb20 \clpadr20 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf0 \cell 
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf0                                     \cf7 version\cf0 , {\field{\*\fldinst{HYPERLINK "https://code.woboq.org/userspace/glibc/sysdeps/generic/ldsodefs.h.html#131"}}{\fldrslt \cf9 ELF_RTYPE_CLASS_PLT}}, \cf7 \cb6 flags\cf0 \cb1 , \cf9 NULL\cf0 );\cell \lastrow\row
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 \kerning1\expnd0\expndtw0 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f1 \cf0 \'bd\'e1\'c2\'db\'a3\'ba\'ce\'b1\'d4\'ec
+\f0 link_map
+\f1 \'b8\'f9\'b1\'be\'b2\'bb\'bf\'c9\'d0\'d0\'a3\'ac\'b5\'bd\'b5\'f7\'d3\'c3_dl_lookup_symbol_x()\'d5\'e2\'c0\'ef\'be\'cd\'b2\'bb\'d0\'d0\'c1\'cb\'a3\'ac\'d2\'f2\'ce\'aa\'b4\'ab\'bd\'f8\'c8\'a5\'b5\'c4\'b2\'ce\'ca\'fd[edi+0x1cc]\'ce\'b4\'d6\'aa\'a1\'a3
+\f0 \
+\
+\
+\
+\
+[\uc0\u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 REGISTERS\u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 ]\
+*EAX  0x804829f 
+\f5 \uc0\u9666 
+\f0 \'97 jb     0x8048306 /* 'read' */\
+ EBX  0x80481f8 
+\f5 \uc0\u9666 
+\f0 \'97 daa     /* "'" */\
+*ECX  0xffffcd64 \'97
+\f4 \uc0\u9656 
+\f0  0x80481f8 
+\f5 \uc0\u9666 
+\f0 \'97 daa     /* "'" */\
+*EDX  0xf7ffd918 
+\f5 \uc0\u9666 
+\f0 \'97 0x0\
+ EDI  0xf7ffd918 
+\f5 \uc0\u9666 
+\f0 \'97 0x0\
+ ESI  0x1\
+ EBP  0x804a010 (_GLOBAL_OFFSET_TABLE_+16) \'97
+\f4 \uc0\u9656 
+\f0  0x80483a6 (read@plt+6) 
+\f5 \uc0\u9666 
+\f0 \'97 push   8\
+*ESP  0xffffcd28 \'97
+\f4 \uc0\u9656 
+\f0  0xf7ffdad0 \'97
+\f4 \uc0\u9656 
+\f0  0xf7ffda74 \'97
+\f4 \uc0\u9656 
+\f0  0xf7fd4470 
+\f5 \uc0\u9666 
+\f0 \'97 ...\
+*EIP  0xf7fe789d (_dl_fixup+189) \'97
+\f4 \uc0\u9656 
+\f0  0xffb1bee8 
+\f5 \uc0\u9666 
+\f0 \'97 0xffb1bee8\
+[\uc0\u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 DISASM\u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 \u9472 ]\
+ 
+\f4 \uc0\u9658 
+\f0  0xf7fe789d <_dl_fixup+189>    call   _dl_lookup_symbol_x           <0xf7fe2a60>\
+        arg[0]: 0xf7ffdad0 \'97
+\f4 \uc0\u9656 
+\f0  0xf7ffda74 \'97
+\f4 \uc0\u9656 
+\f0  0xf7fd4470 \'97
+\f4 \uc0\u9656 
+\f0  0xf7ffd918 
+\f5 \uc0\u9666 
+\f0 \'97 ...\
+        arg[1]: 0xf7fd44a0 \'97
+\f4 \uc0\u9656 
+\f0  0x80482d9 
+\f5 \uc0\u9666 
+\f0 \'97 inc    edi /* 'GLIBC_2.0' */\
+        arg[2]: 0x1\
+        arg[3]: 0x1\
+        arg[4]: 0x0\
+        arg[5]: 0xf7e642d8 (setbuffer+200) 
+\f5 \uc0\u9666 
+\f0 \'97 add    esp, 0x10\
+        arg[6]: 0xf7fb65a0 (_IO_2_1_stdin_) 
+\f5 \uc0\u9666 
+\f0 \'97 0xfbad2089\
+        arg[7]: 0xffffcdbc \'97
+\f4 \uc0\u9656 
+\f0  0xf7e642d8 (setbuffer+200) 
+\f5 \uc0\u9666 
+\f0 \'97 add    esp, 0x10\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+}

@@ -1,0 +1,486 @@
+{\rtf1\ansi\ansicpg936\cocoartf1404\cocoasubrtf470
+{\fonttbl\f0\fswiss\fcharset0 Helvetica;\f1\fnil\fcharset0 LucidaGrande;\f2\fnil\fcharset0 ArialUnicodeMS;
+\f3\fnil\fcharset134 PingFangSC-Regular;\f4\fnil\fcharset0 HelveticaNeue;\f5\fmodern\fcharset0 Courier;
+\f6\fnil\fcharset0 Consolas;}
+{\colortbl;\red255\green255\blue255;\red0\green0\blue255;\red255\green0\blue255;\red10\green32\blue81;
+\red109\green111\blue3;\red0\green0\blue109;\red113\green0\blue13;\red234\green234\blue234;\red38\green38\blue38;
+}
+\paperw11900\paperh16840\margl1440\margr1440\vieww11940\viewh12300\viewkind0
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 \
+\
+00:0000\uc0\u9474  rsp  0x601868 \'97
+\f1 \uc0\u9656 
+\f0  0x7f92befaa168 
+\f2 \uc0\u9666 
+\f0 \'97 0x0\
+01:0008\uc0\u9474       0x601870 
+\f2 \uc0\u9666 
+\f0 \'97 0x1562c\
+\
+pwndbg> p *(struct link_map*) 0x7f92befaa168\
+$1 = \{\
+  l_addr = 0, \
+  l_name = 0x7f92befaa6f8 "", \
+  l_ld = 0x600e28, \
+  l_next = 0x7f92befaa700, \
+  l_prev = 0x0, \
+  l_real = 0x7f92befaa168, \
+  l_ns = 0, \
+  l_libname = 0x7f92befaa6e0, \
+  l_info = \{0x0, 0x600e28, 0x600f08, 0x600ef8, 0x0, 0x600ea8, 0x600eb8, 0x600f38, 0x600f48, 0x600f58, 0x600ec8, 0x600ed8, 0x600e38, 0x600e48, 0x0...\}, \
+  l_phdr = 0x400040, \
+  l_entry = 4195712, \
+  l_phnum = 9, \
+  l_ldnum = 0, \
+  l_searchlist = \{\
+    r_list = 0x7f92bef8d508, \
+    r_nlist = 3\
+  \}, \
+  l_symbolic_searchlist = \{\
+    r_list = 0x7f92befaa6d8, \
+    r_nlist = 0\
+  \}, \
+  l_loader = 0x0, \
+  l_versions = 0x7f92bef8d520, \
+  l_nversions = 3, \
+  l_nbuckets = 2, \
+  l_gnu_bitmask_idxbits = 0, \
+  l_gnu_shift = 6, \
+  l_gnu_bitmask = 0x4002a8, \
+  \{\
+    l_gnu_buckets = 0x4002b0, \
+    l_chain = 0x4002b0\
+  \}, \
+  \{\
+    l_gnu_chain_zero = 0x40029c, \
+    l_buckets = 0x40029c\
+  \}, \
+  l_direct_opencount = 1, \
+  l_type = lt_executable, \
+  l_relocated = 1, \
+  l_init_called = 1, \
+  l_global = 1, \
+  l_reserved = 0, \
+  l_phdr_allocated = 0, \
+  l_soname_added = 0, \
+  l_faked = 0, \
+  l_need_tls_init = 0, \
+  l_auditing = 0, \
+  l_audit_any_plt = 0, \
+  l_removed = 0, \
+  l_contiguous = 0, \
+  l_symbolic_in_local_scope = 0, \
+  l_free_initfini = 0, \
+  l_rpath_dirs = \{\
+    dirs = 0xffffffffffffffff, \
+    malloced = 0\
+  \}, \
+  l_reloc_result = 0x0, \
+  l_versyms = 0x4003f6, \
+  l_origin = 0x0, \
+  l_map_start = 4194304, \
+  l_map_end = 6295664, \
+  l_text_end = 4196644, \
+  l_scope_mem = \{0x7f92befaa420, 0x0, 0x0, 0x0\}, \
+  l_scope_max = 4, \
+  l_scope = 0x7f92befaa4c0, \
+  l_local_scope = \{0x7f92befaa420, 0x0\}, \
+  l_file_id = \{\
+    dev = 0, \
+    ino = 0\
+  \}, \
+  l_runpath_dirs = \{\
+    dirs = 0xffffffffffffffff, \
+    malloced = 0\
+  \}, \
+  l_initfini = 0x7f92bef8d4e8, \
+  l_reldeps = 0x0, \
+  l_reldepsmax = 0, \
+  l_used = 1, \
+  l_feature_1 = 0, \
+  l_flags_1 = 0, \
+  l_flags = 0, \
+  l_idx = 0, \
+  l_mach = \{\
+    plt = 0, \
+    gotplt = 0, \
+    tlsdesc_table = 0x0\
+  \}, \
+  l_lookup_cache = \{\
+    sym = 0x400380, \
+    type_class = 2, \
+    value = 0x7f92bef8d000, \
+    ret = 0x7f92be9bfdf8\
+  \}, \
+  l_tls_initimage = 0x0, \
+  l_tls_initimage_size = 0, \
+  l_tls_blocksize = 0, \
+  l_tls_align = 0, \
+  l_tls_firstbyte_offset = 0, \
+  l_tls_offset = 0, \
+  l_tls_modid = 0, \
+  l_tls_dtor_count = 0, \
+  l_relro_addr = 6295056, \
+  l_relro_size = 496, \
+  l_serial = 0, \
+  l_audit = 0x7f92befaa5d8\
+\}\
+pwndbg> x /100xg 0x7f92befaa168\
+0x7f92befaa168:	0x0000000000000000	0x00007f92befaa6f8\
+0x7f92befaa178:	0x0000000000600e28	0x00007f92befaa700\
+0x7f92befaa188:	0x0000000000000000	0x00007f92befaa168\
+0x7f92befaa198:	0x0000000000000000	0x00007f92befaa6e0\
+0x7f92befaa1a8:	0x0000000000000000	0x0000000000600e28\
+0x7f92befaa1b8:	0x0000000000600f08	0x0000000000600ef8\
+0x7f92befaa1c8:	0x0000000000000000	0x0000000000600ea8\
+0x7f92befaa1d8:	0x0000000000600eb8	0x0000000000600f38\
+0x7f92befaa1e8:	0x0000000000600f48	0x0000000000600f58\
+0x7f92befaa1f8:	0x0000000000600ec8	0x0000000000600ed8\
+0x7f92befaa208:	0x0000000000600e38	0x0000000000600e48\
+0x7f92befaa218:	0x0000000000000000	0x0000000000000000\
+0x7f92befaa228:	0x0000000000000000	0x0000000000000000\
+0x7f92befaa238:	0x0000000000000000	0x0000000000000000\
+0x7f92befaa248:	0x0000000000600f18	0x0000000000600ee8\
+0x7f92befaa258:	0x0000000000000000	0x0000000000600f28\
+0x7f92befaa268:	0x0000000000000000	0x0000000000600e58\
+0x7f92befaa278:	0x0000000000600e78	0x0000000000600e68\
+0x7f92befaa288:	0x0000000000600e88	0x0000000000000000\
+0x7f92befaa298:	0x0000000000000000	0x0000000000000000\
+0x7f92befaa2a8:	0x0000000000000000	0x0000000000000000\
+0x7f92befaa2b8:	0x0000000000600f78	0x0000000000600f68\
+0x7f92befaa2c8:	0x0000000000000000	0x0000000000000000\
+0x7f92befaa2d8:	0x0000000000000000	0x0000000000000000\
+0x7f92befaa2e8:	0x0000000000000000	0x0000000000000000\
+0x7f92befaa2f8:	0x0000000000000000	0x0000000000000000\
+0x7f92befaa308:	0x0000000000000000	0x0000000000000000\
+0x7f92befaa318:	0x0000000000000000	0x0000000000000000\
+0x7f92befaa328:	0x0000000000000000	0x0000000000000000\
+0x7f92befaa338:	0x0000000000000000	0x0000000000000000\
+0x7f92befaa348:	0x0000000000000000	0x0000000000000000\
+0x7f92befaa358:	0x0000000000000000	0x0000000000000000\
+0x7f92befaa368:	0x0000000000000000	0x0000000000000000\
+0x7f92befaa378:	0x0000000000000000	0x0000000000000000\
+0x7f92befaa388:	0x0000000000000000	0x0000000000000000\
+0x7f92befaa398:	0x0000000000000000	0x0000000000000000\
+0x7f92befaa3a8:	0x0000000000000000	0x0000000000000000\
+0x7f92befaa3b8:	0x0000000000000000	0x0000000000000000\
+0x7f92befaa3c8:	0x0000000000000000	0x0000000000000000\
+0x7f92befaa3d8:	0x0000000000000000	0x0000000000000000\
+0x7f92befaa3e8:	0x0000000000000000	0x0000000000000000\
+0x7f92befaa3f8:	0x0000000000000000	0x0000000000600e98\
+0x7f92befaa408:	0x0000000000400040	0x0000000000400580\
+0x7f92befaa418:	0x0000000000000009	0x00007f92bef8d508\
+0x7f92befaa428:	0x0000000000000003	0x00007f92befaa6d8\
+0x7f92befaa438:	0x0000000000000000	0x0000000000000000\
+0x7f92befaa448:	0x00007f92bef8d520		0x0000000200000003\
+0x7f92befaa458:	0x0000000600000000	0x00000000004002a8\
+0x7f92befaa468:	0x00000000004002b0	0x000000000040029c\
+0x7f92befaa478:	0x0000001c00000001	0xffffffffffffffff\
+\
+\
+\
+rdi==r10== 0x7f92befaa168    link_map
+\f3 \'b5\'d8\'d6\'b7
+\f0 \
+=> 0x7f92bed929f0 <_dl_fixup>:	push   rbx\
+   0x7f92bed929f1 <_dl_fixup+1>:	mov    r10,rdi\
+   0x7f92bed929f4 <_dl_fixup+4>:	mov    esi,esi\
+   0x7f92bed929f6 <_dl_fixup+6>:	lea    rdx,[rsi+rsi*2]\
+rsi== 0x1562c 
+\f3 \'d5\'e2\'b8\'f6\'c6\'ab\'d2\'c6\
+rdx=rsi * 3
+\f0 \
+\
+\
+   0x7f92bed929fa <_dl_fixup+10>:	sub    rsp,0x10\
+   0x7f92bed929fe <_dl_fixup+14>:	mov    rax,QWORD PTR [rdi+0x68]\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0    0x7f92bed92a02 <_dl_fixup+18>:	mov    rdi,QWORD PTR [rax+0x8]\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 rax=\cf2 [link_map+0x68]==0x600ea8\cf0 \
+
+\f3\b\fs36 rdi
+\b0\fs24 =[rax+8]==0x400398
+\f0  \cf3 #dynstr   
+\f4\fs32 \expnd0\expndtw0\kerning0
+STRTAB
+\f0\fs24 \cf0 \kerning1\expnd0\expndtw0 \
+\pard\pardeftab720\partightenfactor0
+
+\f5\fs26 \cf4 \expnd0\expndtw0\kerning0
+2 strtab\cf0  = (\cf5 const\cf0  \cf5 void\cf0  *) {\field{\*\fldinst{HYPERLINK "https://code.woboq.org/userspace/glibc/sysdeps/generic/ldsodefs.h.html#63"}}{\fldrslt \cf6 D_PTR}} (\cf4 l\cf0 , {\field{\*\fldinst{HYPERLINK "https://code.woboq.org/userspace/glibc/include/link.h.html#link_map::l_info"}}{\fldrslt \cf7 l_info}}[{\field{\*\fldinst{HYPERLINK "https://code.woboq.org/userspace/glibc/elf/elf.h.html#846"}}{\fldrslt \cf6 \cb8 DT_STRTAB}}]);
+\f0\fs24 \kerning1\expnd0\expndtw0 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 \
+\
+   0x7f92bed92a06 <_dl_fixup+22>:	mov    rax,QWORD PTR [r10+0xf8]\
+   0x7f92bed92a0d <_dl_fixup+29>:	mov    rax,QWORD PTR [rax+0x8]\
+   0x7f92bed92a11 <_dl_fixup+33>:	lea    r8,[rax+rdx*8]\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 rax=\cf2 [link_map+0xf8]==0x600f28\cf0 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f3\b\fs36 \cf0 rax
+\b0\fs24 =[rax+8]==0x400470
+\f0  \cf3 #rel_plt     
+\f4\fs32 \expnd0\expndtw0\kerning0
+JMPREL
+\f0\fs24 \cf0 \kerning1\expnd0\expndtw0 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\b\fs36 \cf0 r8
+\b0\fs24 =rax+rdx*8=  jmprel
+\f3 \'b6\'d4\'d3\'a6\'cc\'f5\'c4\'bf\
+\pard\pardeftab720\partightenfactor0
+
+\f5\fs26 \cf0 \expnd0\expndtw0\kerning0
+3 \cf4 reloc\cf0 = (\cf5 const\cf0  \cf5 void\cf0  *) ({\field{\*\fldinst{HYPERLINK "https://code.woboq.org/userspace/glibc/sysdeps/generic/ldsodefs.h.html#63"}}{\fldrslt \cf6 D_PTR}} (\cf4 l\cf0 , {\field{\*\fldinst{HYPERLINK "https://code.woboq.org/userspace/glibc/include/link.h.html#link_map::l_info"}}{\fldrslt \cf7 l_info}}[{\field{\*\fldinst{HYPERLINK "https://code.woboq.org/userspace/glibc/elf/elf.h.html#864"}}{\fldrslt \cf6 DT_JMPREL}}]) + {\field{\*\fldinst{HYPERLINK "https://code.woboq.org/userspace/glibc/sysdeps/x86_64/dl-runtime.c.html#6"}}{\fldrslt \cf6 \cb8 reloc_offset}});
+\f0\fs24 \kerning1\expnd0\expndtw0 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 \
+   0x7f92bed92a15 <_dl_fixup+37>:	mov    rax,QWORD PTR [r10+0x70]\
+   0x7f92bed92a1d <_dl_fixup+45>:	mov    rax,QWORD PTR [rax+0x8]\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 rax=\cf2 [link_map+0x70]==0x600eb8\cf0 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f3\b\fs36 \cf0 rax
+\b0\fs24 =[rax+8]==0x4002c0 
+\f0 \cf3 #
+\f4\fs32 \expnd0\expndtw0\kerning0
+dynsym   SYMTAB
+\f0\fs24 \cf0 \kerning1\expnd0\expndtw0 \
+\pard\pardeftab720\partightenfactor0
+
+\f5\fs26 \cf0 \expnd0\expndtw0\kerning0
+1 \cf4 \cb8 symtab\cf0 \cb1 = (\cf5 const\cf0  \cf5 void\cf0  *) {\field{\*\fldinst{HYPERLINK "https://code.woboq.org/userspace/glibc/sysdeps/generic/ldsodefs.h.html#63"}}{\fldrslt \cf6 D_PTR}} (\cf4 l\cf0 , {\field{\*\fldinst{HYPERLINK "https://code.woboq.org/userspace/glibc/include/link.h.html#link_map::l_info"}}{\fldrslt \cf7 l_info}}[{\field{\*\fldinst{HYPERLINK "https://code.woboq.org/userspace/glibc/elf/elf.h.html#847"}}{\fldrslt \cf6 DT_SYMTAB}}]);
+\f0\fs24 \kerning1\expnd0\expndtw0 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0    0x7f92bed92a19 <_dl_fixup+41>:	mov    rcx,QWORD PTR [r8+0x8]   #
+\f3 \'c8\'a1
+\f0 r_info\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0    0x7f92bed92a21 <_dl_fixup+49>:	mov    rdx,rcx\
+   0x7f92bed92a24 <_dl_fixup+52>:	shr    rdx,0x20\
+   0x7f92bed92a28 <_dl_fixup+56>:	lea    rsi,[rdx+rdx*2]\
+   0x7f92bed92a2c <_dl_fixup+60>:	lea    rsi,[rax+rsi*8]\
+	
+\f3 rsi=SYMTAB\'d6\'d0\'b6\'d4\'d3\'a6\'cc\'f5\'c4\'bf\'b5\'c4\'b5\'d8\'d6\'b7\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0 \cf0    0x7f92bed92a33 <_dl_fixup+67>:	mov    QWORD PTR [rsp+0x8],rsi\
+	[rsp+0x8]=
+\f3 SYMTAB\'d6\'d0\'b6\'d4\'d3\'a6\'cc\'f5\'c4\'bf\'b5\'c4\'b5\'d8\'d6\'b7
+\f5\fs26 \expnd0\expndtw0\kerning0
+\
+\pard\pardeftab720\partightenfactor0
+\cf4 \cb8 4 sym\cf0 \cb1  = &\cf4 symtab\cf0 [{\field{\*\fldinst{HYPERLINK "https://code.woboq.org/userspace/glibc/sysdeps/generic/ldsodefs.h.html#52"}}{\fldrslt \cf6 ELFW}}(R_SYM) (\cf4 reloc\cf0 ->{\field{\*\fldinst{HYPERLINK "https://code.woboq.org/userspace/glibc/elf/elf.h.html#(anonymous)::r_info"}}{\fldrslt \cf7 r_info}})];
+\f0\fs24 \kerning1\expnd0\expndtw0 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 \
+   0x7f92bed92a30 <_dl_fixup+64>:	mov    rax,QWORD PTR [r10]\
+   0x7f92bed92a38 <_dl_fixup+72>:	mov    rbx,rax\
+   0x7f92bed92a3b <_dl_fixup+75>:	add    rbx,QWORD PTR [r8]\
+rbx=link_map->l_addr+&got
+\f3 \'b6\'d4\'d3\'a6\'b5\'d8\'d6\'b7\
+\pard\pardeftab720\partightenfactor0
+
+\f5\fs26 \cf4 \cb8 \expnd0\expndtw0\kerning0
+5 rel_addr\cf0 \cb1  = (\cf5 void\cf0  *)(\cf4 l\cf0 ->{\field{\*\fldinst{HYPERLINK "https://code.woboq.org/userspace/glibc/include/link.h.html#link_map::l_addr"}}{\fldrslt \cf7 l_addr}} + \cf4 reloc\cf0 ->{\field{\*\fldinst{HYPERLINK "https://code.woboq.org/userspace/glibc/elf/elf.h.html#(anonymous)::r_offset"}}{\fldrslt \cf7 r_offset}});
+\f0\fs24 \kerning1\expnd0\expndtw0 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 \
+   0x7f92bed92a3e <_dl_fixup+78>:	cmp    ecx,0x7\
+\pard\pardeftab720\partightenfactor0
+
+\f5\fs26 \cf6 \cb8 \expnd0\expndtw0\kerning0
+6 {\field{\*\fldinst{HYPERLINK "https://code.woboq.org/userspace/glibc/assert/assert.h.html#104"}}{\fldrslt assert}}\cf0 \cb1  ({\field{\*\fldinst{HYPERLINK "https://code.woboq.org/userspace/glibc/sysdeps/generic/ldsodefs.h.html#52"}}{\fldrslt \cf6 ELFW}}(R_TYPE)(\cf4 reloc\cf0 ->{\field{\*\fldinst{HYPERLINK "https://code.woboq.org/userspace/glibc/elf/elf.h.html#(anonymous)::r_info"}}{\fldrslt \cf7 r_info}}) == {\field{\*\fldinst{HYPERLINK "https://code.woboq.org/userspace/glibc/sysdeps/x86_64/dl-machine.h.html#208"}}{\fldrslt \cf6 ELF_MACHINE_JMP_SLOT}});
+\f0\fs24 \kerning1\expnd0\expndtw0 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0    0x7f92bed92a41 <_dl_fixup+81>:	jne    0x7f92bed92b97 <_dl_fixup+423>\
+\
+\
+\
+0x7f9d1ad1da47 <_dl_fixup+87>:	test   BYTE PTR [rsi+0x5],0x3\
+   0x7f9d1ad1da4b <_dl_fixup+91>:	jne    0x7f9d1ad1dae9 <_dl_fixup+249>\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f3 \cf0 	\'c5\'d0\'b6\'cfst_other\'ca\'c7\'b7\'f1\'ce\'aa0\'a3\'bf\'a3\'a8\'c6\'ab\'d2\'c60x5\'a3\'a9
+\f0 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 \
+\
+\
+
+\f3 \'ce\'ca\'cc\'e2\'a3\'ba
+\f0 \
+	
+\f3 \'b4\'cb\'ca\'b1
+\f0 rbx=__libc_start_main+
+\f6\fs28 \cf9 \expnd0\expndtw0\kerning0
+r_offset\
+	
+\f3 \'b1\'d8\'d0\'eb\'b1\'a3\'d6\'a4
+\f6 rbx
+\f3 \'d5\'e2\'b8\'f6\'b5\'d8\'d6\'b7\'ca\'c7\'bf\'c9\'d0\'b4\'b5\'c4\'a1\'a3\'cb\'f9\'d2\'d4\'d2\'aa\'bf\'d8\'d6\'c6\'ba\'c3r_offset\'a1\'a3
+\f0\fs24 \cf0 \kerning1\expnd0\expndtw0 \
+ 
+\f1 \uc0\u9658 
+\f0  0x7f6fdff10b07 <_dl_fixup+279>    mov    qword ptr [rbx], rax          <0x7f6fdfbc5b46>\
+   0x7f6fdff10b0a <_dl_fixup+282>    add    rsp, 0x10\
+   0x7f6fdff10b0e <_dl_fixup+286>    pop    rbx\
+   0x7f6fdff10b0f <_dl_fixup+287>    ret\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+0x601450\
+0x600e50\
+\
+0x400501\
+0x400501\
+0x400501\
+0x400501\
+0x400501\
+0x400501\
+0x400501\
+0x400501\
+0x400501\
+0x400501\
+0x400501\
+0x400501\
+0x400501\
+0x400501\
+0x4007a6\
+0x594d6f5541464c73\
+0x0\
+0x1\
+0x601018\
+0x8\
+0x601008\
+0x1\
+0x400790\
+0x663364594437586e\
+0x0\
+0x1\
+0x601030\
+0x190\
+0x601450\
+0x0\
+0x400790\
+0x4a436769306a4869\
+0x0\
+0x601448\
+0x0\
+0x0\
+0x0\
+0x0\
+0x4006ab\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 \
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+}
