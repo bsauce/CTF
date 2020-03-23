@@ -8,6 +8,8 @@ https://www.jianshu.com/p/07994f8b2bb0
 3. TokyoWesternsCTF2019-gnote——[TokyoWesternsCTF-2019-gnote Double-Fetch](https://blog.csdn.net/panhewu9919/article/details/100891770)—一道double-fetch题目的内核题。
 4. KrazyNote-Balsn CTF 2019——[【linux内核userfaultfd使用】BalsnCTF2019-KrazyNote](https://xz.aliyun.com/t/6653)—一道条件竞争漏洞的内核题目
 5. STARCTF_2019_hackme——[【call_usermodehelper提权路径变量总结】](https://www.jianshu.com/p/a2259cd3e79e)—一道整数溢出&竞争的内核题
+6. ret2dir——[【linux内核漏洞利用】ret2dir利用方法](https://www.jianshu.com/p/3c662b6163a7)
+
 
 
 
