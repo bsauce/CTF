@@ -9,6 +9,7 @@ https://www.jianshu.com/p/07994f8b2bb0
 4. KrazyNote-Balsn CTF 2019——[【linux内核userfaultfd使用】BalsnCTF2019-KrazyNote](https://xz.aliyun.com/t/6653)—一道条件竞争漏洞的内核题目
 5. STARCTF_2019_hackme——[【call_usermodehelper提权路径变量总结】](https://www.jianshu.com/p/a2259cd3e79e)—一道整数溢出&竞争的内核题
 6. ret2dir——[【linux内核漏洞利用】ret2dir利用方法](https://www.jianshu.com/p/3c662b6163a7)
+7. kernoob——[【内核漏洞利用】绕过CONFIG_SLAB_FREELIST_HARDENED防护—kernoob两种解法](https://blog.csdn.net/panhewu9919/article/details/111839950)
 
 
 
