@@ -10,6 +10,7 @@ https://www.jianshu.com/p/07994f8b2bb0
 5. STARCTF_2019_hackme——[【call_usermodehelper提权路径变量总结】](https://www.jianshu.com/p/a2259cd3e79e)—一道整数溢出&竞争的内核题
 6. ret2dir——[【linux内核漏洞利用】ret2dir利用方法](https://www.jianshu.com/p/3c662b6163a7)
 7. kernoob——[【内核漏洞利用】绕过CONFIG_SLAB_FREELIST_HARDENED防护—kernoob两种解法](https://blog.csdn.net/panhewu9919/article/details/111839950)
+8. corCTF 2021——[【Exploit trick】Linux内核中利用msg_msg结构实现任意地址读写](https://bsauce.github.io/2021/09/05/msg_msg/)
 
 
 
