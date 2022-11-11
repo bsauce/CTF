@@ -1,0 +1,15 @@
+qemu-system-x86_64 \
+    -m 1G \
+    -nographic \
+    -no-reboot \
+    -kernel bzImage \
+    -append "console=ttyS0 root=/dev/sda quiet loglevel=3 rd.systemd.show_status=auto rd.udev.log_level=3 oops=panic panic=-1 net.ifnames=0 pti=on nokaslr" \
+    -drive file=./stretch.img,format=raw \
+    -net user,host=10.0.2.10,hostfwd=tcp:127.0.0.1:10021-:22 \
+    -net nic,model=e1000 \
+    -snapshot \
+    -monitor /dev/null \
+    -cpu qemu64,+smep,+smap,+rdrand \
+    -smp cores=4 \
+    -s \
+    --enable-kvm
